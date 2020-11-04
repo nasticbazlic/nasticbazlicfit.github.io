@@ -162,3 +162,39 @@
         }
     }    
 } 
+@media ( max-width: 470px) {
+    .header {
+        &__logo {
+           img {
+               width: 65%;
+           }
+        } 
+    }
+    .promo {
+        &__icons {
+            width: 300px;
+        }
+        &__header {
+            font-size: 22px;
+            line-height: 21px;
+        }
+        &__subheader {
+            font-size: 14px;
+            line-height: 14px;            
+        }
+    }
+    .advantage {
+        &__subheader {
+            margin-top: 20px;
+            font-size: 20px;
+
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 15px;
+            width: 250px;
+            text-align: center;
+        }
+    }
+}
+
