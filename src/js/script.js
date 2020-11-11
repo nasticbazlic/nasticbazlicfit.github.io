@@ -26,6 +26,7 @@ const slider = tns({
   slideBy: 'page',
   autoplay: false,
   controls: false,
+  speed: 1200,
   nav: false /* это точки */
  
 });
