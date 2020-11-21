@@ -2,6 +2,14 @@
    .promo {
        width: 100%;
    }
+   .carousel {
+    .prev {
+        left: 25px;
+    }
+    .next {
+        right: 25px;
+    }
+   }
 }
 @media ( max-width: 991px) {
     .container {
@@ -69,6 +77,33 @@
         margin: 0 auto;
         margin-top: 36px;
     }
+    .carousel {
+        &__inner {
+            img {
+                width: 50%;
+            }            
+        }    
+        .prev {
+            left: 50px;
+        }
+        .next {
+            right: 50px;
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
+    .catalog-item {        
+        width: 250px;        
+    }   
+    .reviews {
+        img {
+            padding-right: 40px;
+            padding-left: 30px;
+        }
+    } 
 }
 @media ( max-width: 767px) {
     .container {
@@ -164,8 +199,30 @@
         margin: 0 auto;
         margin-top: 36px;
     }
-
-      
+    .carousel {
+        .prev {
+            left: 50px;
+        }
+        .next {
+            right: 50px;
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 175px;
+            font-size: 15px;
+        }
+        .catalog-item {
+            &__descr {
+                font-size: 12px;
+            }
+            &__list {
+                li {
+                    margin-bottom: 10px;
+                }                
+            }
+        }
+    }      
 }
 @media ( max-width: 575px) {
     .container {
@@ -207,7 +264,32 @@
             font-size: 16px;
             text-align: center;
         }
-    }    
+    }
+    .carousel {
+        .prev, .next {
+            img {
+                width: 20px;
+                height: 40px;
+            }
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 150px;
+            font-size: 12px;
+        } 
+    } 
+    .reviews {
+        &__item {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        &__descr {
+            text-align: center;
+        }        
+    }  
 } 
 @media ( max-width: 470px) {
     .header {
@@ -263,5 +345,30 @@
         margin: 0 auto;
         margin-top: 36px;
     }
+    .catalog {
+        &__tab {
+            width: 120px;
+            font-size: 10px;            
+        } 
+        &__tabs {
+            margin-top: 45px;
+        }
+        .catalog-item {
+            width: 300px;
+        }
+    }
+    .carousel {
+        .prev, .next {
+            display: none;
+        }
+        &__inner {
+            img {
+                width: 60%;
+            }
+        }
+    }
+    .title {    
+        font-size: 25px;        
+    }   
 }
 
