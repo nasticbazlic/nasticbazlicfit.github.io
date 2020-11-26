@@ -39,6 +39,15 @@
     &_mini {
         min-height: 140px;
     }
+    .error {  /* изменяем вид предупреждающего уведоления о не правильном заполнении ячеек */
+        border: 1px solid red;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        color: $main-color;
+        margin-bottom: 13px;
+    }
 }
 
 #consultation, #order, #thanks {
